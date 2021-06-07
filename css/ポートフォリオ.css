@@ -315,11 +315,12 @@ contents {
 
 .box1 a{
   height: 200px;
-  width: 30vw;
+  padding-right: 10px;
   background: rgb(80, 180, 250);
   margin-right: 10px;
   display: inline-block;
 }
+
 .box2 a{
   height: 200px;
   width: 30vw;

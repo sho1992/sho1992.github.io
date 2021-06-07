@@ -1,0 +1,526 @@
+/* 背景画像 */
+.bg-slider {
+  max-width: 100vw;
+  height: 0;
+  padding-top: 55%;
+	background-position:center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  position: relative;
+}
+
+.bg-slider__title{
+	color: gold;
+	font-size: 48px;
+  opacity: 0.5;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
+  font-weight: normal;
+  font-family: 'Hessley Andreas','Open Baslerville 0.0.53', cursive;
+  transform: rotate(20deg);
+  position: absolute;
+  top: 50%;
+}
+
+body {
+  margin: 0 5px;
+}
+
+/* ヘッダー */
+header {
+  font-family: 'Open Baslerville 0.0.53',cursive;
+  width: 100%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+
+@media screen and (max-width: 480px){
+  .menu {
+    display: none;
+  }
+}
+
+header h1 {
+  vertical-align: middle;
+  margin-left: 100px;
+}
+
+header a {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+header ul {
+  font-family: serif;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+header li {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+header ul li a {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+header ul li a:hover {
+  opacity: 0.8;
+  color: #ffd700;
+  transition: 1s;
+}
+
+header ul li a::before,
+header ul li a::after {
+  border-bottom: solid 2px #ffd700;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  transition: all .3s ease;
+  -webkit-transition: all .7s ease;
+  width: 0;
+}
+header ul li a::before {
+  left: 50%;
+}
+header ul li a::after {
+  right: 50%;
+}
+header ul li a:hover::before,
+header ul li a:hover::after {
+  width: 60%;
+}
+
+/* ニュース */
+.news h2 {
+  font-weight: normal;
+  font-family: serif;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.news a {
+  padding: 0 .3em;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 50%, rgba(218, 179, 0, 0.7) 50%);
+  background-position: 0 0;
+  background-size: 200% auto;
+  transition: .6s;
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  opacity: 0.7;
+}
+.news a:hover {
+  background-position: -100% 0;
+  color: #fff;
+}
+
+.news li {
+  text-align: center;
+  list-style: none;
+  border-top: 1px solid #ddd;
+  border-bottom:  1px solid #ddd;
+}
+
+.news h3 {
+  font-weight: normal;
+}
+
+.news {
+  padding: 0;
+}
+
+.more {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.more a {
+  text-decoration: none;
+  color: black;
+  transition: .6s;
+}
+
+.more a:hover {
+  color: gold;
+}
+
+.more a span {
+  display: inline-block;
+}
+.more a:hover span {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
+  transition: .6s;
+}
+.more a:hover span:nth-of-type(1) {
+  -webkit-transition-delay: .02s;
+  transition-delay: .02s;
+}
+.more a:hover span:nth-of-type(2) {
+  -webkit-transition-delay: .04s;
+  transition-delay: .04s;
+}
+.more a:hover span:nth-of-type(3) {
+  -webkit-transition-delay: .06s;
+  transition-delay: .06s;
+}
+.more a:hover span:nth-of-type(4) {
+  -webkit-transition-delay: .08s;
+  transition-delay: .08s;
+}
+
+/* サービス */
+.service {
+  font-family: serif;
+  opacity: 0.8;
+  margin-top: 80px;
+}
+
+.service-a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0 .3em;
+  transition: all .3s;
+  border: 0;
+}
+
+.service-a:hover {
+  color: #fff;
+  background-color: gold;
+}
+
+.service h2 {
+  text-align: center;
+  color: gold;
+  font-weight: normal;
+}
+
+.makeup {
+  background: #F6F6F6;
+  font-size: 1.3rem;
+}
+
+.makeup h3 {
+  font-weight: normal;
+}
+.makeup h4 {
+  font-weight: normal;
+}
+
+.makeup img {
+  max-width: 100%;
+}
+
+.makeup td {
+  border: 0;
+}
+@media screen and (max-width: 480px){
+  .makeup-table td {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+}
+.hairstyle {
+  font-size: 1.3rem;
+}
+
+.hairstyle img {
+  max-width: 100%;
+}
+
+.hairstyle td {
+  border: 0;
+}
+
+@media screen and (max-width: 480px){
+  .hairstyle td {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* インフォメーション */
+.info h3 {
+  text-align: center;
+  font-family: serif;
+}
+
+.info-text {
+  background-image: url(../img/mizuho4141404IMG_8193_TP_V4.jpg);
+  max-width: 100%;
+  background-size: cover;
+  text-align: center;
+}
+
+.info-text a {
+  color: gold;
+  text-decoration: none;
+  padding: 0 .3em;
+  transition: all .3s;
+}
+
+.info-text a:hover {
+  color: #fff;
+  background-color: gold;
+}
+
+/* 料金表 */
+.fee h3 {
+  text-align: center;
+}
+
+.fee a {
+  color: gold;
+  text-decoration: none;
+  padding: 0 .3em;
+  transition: all .3s;
+}
+.fee a:hover {
+  color: #fff;
+  background-color: gold;
+}
+
+/* よくある質問 */
+.question h3 {
+  text-align: center;
+}
+
+.question a {
+  color: gold;
+  text-decoration: none;
+  padding: 0 .3em;
+  transition: all .3s;
+}
+.question a:hover {
+  color: #fff;
+  background-color: gold;
+}
+
+.faq{
+  background: #F6F6F6;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
+}
+.faq dt{
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px dotted;
+  font-weight: bold;
+}
+.faq dt:before{
+  content: "Q";
+  font-weight: normal;
+  background: #cc0000;
+  color: #fff;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.6;
+  text-align: center;
+  display: inline-block;
+  border-radius: 1em;
+  margin-right: .5em;
+}
+.faq dd{
+  margin-bottom: 2em;
+}
+.faq dd:last-child{
+  margin-bottom: 0;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr{
+  background-image: linear-gradient(40deg, #fce043 0%, #fb7ba2 74%);
+}
+
+table tr:last-child *{
+  border-bottom: none;
+}
+
+table th,table td{
+  text-align: center;
+  border: solid 2px #fff;
+  color: white;
+  padding: 10px 0;
+}
+
+/* コンタクト */
+.contact {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.contact-ttl a {
+  color: gold;
+  text-decoration: none;
+  padding: 0 .3em;
+  transition: all .3s;
+}
+
+.contact a:hover {
+  color: #fff;
+  background-color: gold;
+}
+
+.booking {
+  max-width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.booking th {
+  color: gold;
+  opacity: 0.8;
+}
+
+.contact-ttl{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-item,
+.contact-body {
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.contact-item {
+    text-align: left;
+    width: 30%;
+    background-color: #eee;
+}
+
+.contact-body {
+    width: 70%;
+}
+
+@media screen and (max-width: 480px){
+  .contact-table{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .booking {
+    margin-left: 10%;
+    width: 100%;
+  }
+}
+
+
+.form-text {
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  max-width: 400px;
+}
+
+.contact-sex + .contact-sex {
+  margin-left: 10px;
+}
+
+.contact-sex-txt {
+  margin-left: 5px;
+}
+
+.form-select {
+  width: 180px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.flat.border {
+  position: relative;
+  text-align: center;
+  /* 中央揃え */
+  display: block;
+  margin: 0 auto;
+  /* 幅の指定 */
+  width: 100%;
+  max-width: 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  /* 色の指定 */
+  background: linear-gradient(135deg, #ffd900, #ff9300);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+  border: 2px solid #ff9300;
+  background: #fff;
+  color: #ff9300;
+}
+.flat.border:hover {
+  background: #ff9300;
+  color: #fff;
+  cursor: pointer;
+}
+.flat.border:active, .flat.border:focus {
+  top: 2px;
+}
+
+@media screen and (max-width: 480px){
+  .btn {
+    margin-left: 30%;
+  }
+}
+
+/* フッター */
+footer {
+  margin-top: 80px;
+  background-image: linear-gradient(40deg, #fce043 0%, #fb7ba2 74%);
+  color: #fff;
+  font-size: 10px;
+  font-family: cursive;
+  height: 80px;
+}
+
+footer h1 {
+  font-weight: normal;
+  margin: 0;
+  line-height: 80px;
+  float: left;
+}
+
+footer h2 {
+  font-weight: normal;
+  margin: 0 5px;
+  text-align: right;
+}
+
+.from {
+  padding: 16px 5px;
+}
