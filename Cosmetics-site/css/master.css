@@ -28,6 +28,8 @@
 	.bg-slider__title {
 		position: absolute;
 		top: 25%;
+	}
+}
 
 body {
   margin: 0 5px;
