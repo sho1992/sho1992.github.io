@@ -1,0 +1,492 @@
+html {
+  background-color: rgb(241, 213, 123);
+}
+
+body {
+  margin: 0;
+}
+
+
+/* ヘッダー */
+header {
+  background-color: rgba(187, 94, 52, .6);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 60px;
+  position: fixed;
+  z-index: 99;
+}
+
+header h1 {
+  margin: 0;
+  margin-left: 20px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: rgb(164, 246, 121);
+  background-color: rgb(20, 193, 164);
+  padding: 14px;
+  border-radius: 10px;
+}
+
+header h1 a:hover {
+  cursor: pointer;
+  opacity: .6;
+}
+
+.header-list {
+  width: 80%;
+  position: absolute;
+  right: 1%;
+}
+
+.header-list ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.header-list li {
+  margin-right: 30px;
+}
+/* モーダルオープン */
+#modal-open {
+  padding: 19px;
+  display: inline-block;
+  background-color: rgb(87, 188, 223);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#modal-open:hover {
+  opacity: .7;
+}
+
+.header-list a {
+  text-decoration: none;
+  padding: 19px;
+  display: inline-block;
+  background-color: rgb(87, 188, 223);
+  border-radius: 10px;
+}
+
+.header-list a:hover {
+  opacity: 0.7;
+}
+
+/* モーダル */
+
+#modal-page {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  display: none;
+}
+
+.change-page::before,
+.change-page::after {
+  border-bottom: 2px solid #fff;
+  bottom: 0;
+  content: "";
+  display: block;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+  text-align: center;
+}
+
+.change-page::before {
+  left:50%;
+}
+
+.change-page::after {
+  right: 50%;
+}
+
+.change-page:hover::before,
+.change-page:hover::after {
+  width: 100%;
+}
+
+.modal-list {
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+}
+
+.modal-list ul {
+  padding: 0;
+  text-align: center;
+}
+
+.modal-list li {
+  background-color: rgb(0, 0, 0);
+  list-style: none;
+  margin: 50px;
+
+}
+
+#close-modal {
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+}
+
+.modal-list li::before,
+.modal-list li::after {
+  border-bottom: 2px solid #fff;
+  bottom: 0;
+  content: "";
+  display: block;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+  text-align: center;
+}
+
+.modal-list li::before {
+  left:50%;
+}
+
+.modal-list li::after {
+  right: 50%;
+}
+
+.modal-list li:hover::before,
+.modal-list li:hover::after {
+  width: 100%;
+}
+
+.modal-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* トップページ */
+.top {
+  background-color: rgb(205, 117, 130);
+  padding: 60px 10px;
+}
+
+.top h1 {
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.box-list {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.content {
+  width: 20%;
+  border: 1px solid black;
+}
+
+.box {
+  background-color: rgb(140, 221, 178);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.text-box {
+  height: 150px;
+  overflow: hidden;
+}
+
+.text-none {
+  display: none;
+}
+
+.text-active {
+  display: block;
+  margin: 0;
+  padding-top: 10px;
+}
+
+
+/* faq-wrapper */
+
+.faq-wrapper {
+  margin-bottom: 80px;
+}
+
+.faq-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#faq-list {
+  padding: 0;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.faq-list-item {
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+.question {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.faq-list-item span {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.faq-list-item p {
+  margin: 0 0 20px 0;
+}
+
+.answer {
+  display: none;
+  margin: 0;
+}
+
+.center {
+  height: 800px;
+  background-color: rgb(170, 110, 210);
+  text-align: center;
+}
+
+.center h1 {
+  margin: 0;
+}
+
+.change-btn-wrapper {
+  width: 600px;
+  height: 20px;
+  margin: 30px auto;
+}
+
+.change-btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.change-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.prev-btn {
+  float: left;
+  background-color: rgb(16, 126, 142);
+  display: none;
+}
+
+.next-btn {
+  float: right;
+  background-color: rgb(4, 100, 107);
+}
+
+.slide {
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.slide01 {
+  background-color: rgb(228, 16, 44);
+}
+.slide02 {
+  background-color: rgb(61, 74, 171);
+}
+.slide03 {
+  background-color: rgb(17, 203, 210);
+}
+.slide04 {
+  background-color: rgb(207, 75, 31);
+}
+.slide05 {
+  background-color: rgb(235, 148, 238);
+}
+.slide06 {
+  background-color: rgb(4, 63, 223);
+}
+
+.index-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.index-btn {
+  margin: 20px;
+  background-color: rgb(251, 188, 249);
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.index-btn:hover {
+  background-color: rgb(236, 98, 213);
+}
+
+.low {
+  height: 1000px;
+  background-color: rgb(16, 69, 201);
+}
+
+.low h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+}
+
+.container h3 {
+  font-size: 30px;
+}
+
+.section-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.container h3::before, .container h3::after {
+  content: "";
+  height: 2px;
+  width: 40px;
+  vertical-align: middle;
+  background-color: black;
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+.option-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.option-group {
+  margin: 20px 40px;
+  text-align: center;
+}
+
+.option01 {
+  height: 200px;
+  width: 200px;
+  background-color: black;
+}
+
+.option02 {
+  height: 200px;
+  width: 200px;
+  background-color: white;
+}
+.option03 {
+  height: 200px;
+  width: 200px;
+  background-color: red;
+}
+
+.option-btn {
+  background-color: rgb(84, 212, 46);
+  width: 150px;
+  padding: 10px 0;
+  display: inline-block;
+  border-radius: 3px;
+  box-shadow: 0px 4px rgb(111, 148, 7);
+  margin-top: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.option-btn:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+
+.select-form {
+  margin: 10px 0;
+  width: 80%;
+}
+
+textarea {
+  width: 80%;
+  height: 60px;
+}
+
+.form-group div {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+  opacity: .5;
+}
+.sousin {
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 10px 30px;
+  background-color: rgb(10, 108, 187);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.output-wrapper {
+  margin: 50px auto;
+  text-align: left;
+  width: 80%;
+}
+
+.output-inner {
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+.output-item {
+  margin-left: 20px;
+  opacity: .4;
+}
+
+footer {
+  background-color: rgb(164, 12, 52);
+  text-align: center;
+  height: 120px;
+  width: 100%;
+}
+
+.footer-logo h1 {
+  margin: 0;
+  color: #fff;
+}
+
+.footer-jump a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+}

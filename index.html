@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SHOのポートフォリオサイト</title>
     <link rel="stylesheet" href="css/ポートフォリオ.css">
-    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/sho1992/sho1992.github.io/main/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="android-touch-icon.png" sizes="192x192">
 
   </head>
   <body>
     <header>
-      <img src="https://raw.githubusercontent.com/sho1992/sho1992.github.io/main/css/img/favicon%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC.ico"height="54" alt="">
+      <img class="header-image" src="https://raw.githubusercontent.com/sho1992/sho1992.github.io/main/css/img/favicon%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC.ico"height="54" alt="">
       <h1>SHO</h1>
 
       <ul class="menu">
@@ -26,6 +26,8 @@
       </ul>
 
     </header>
+
+    <!-- トップページ -->
     <section>
       <div class="info">
 
@@ -47,6 +49,8 @@
 
     <section>
       <contents>
+
+        <!-- 自己紹介 -->
         <div class="profile">
 
           <h1><a name="profile">PROFILE</a></h1>
@@ -61,6 +65,7 @@
           <p>現在~:退職後プログラミングを独学し勉強中</p>
         </div>
 
+        <!-- 理念 -->
         <div class="myidea">
 
           <h1><a name="myidea">MY IDEA</a></h1>
@@ -77,17 +82,21 @@
 
         <div class="skill-list">
 
+          <!-- スキル概要 -->
           <h1><a name="skill">SKILL</a></h1>
           <div class="graph">
             <ul>
               <li><p>HTML/CSS</p><div class="bar bar1"></div></li>
-              <li><p>PHP 次に勉強予定です。</p><div class="bar bar2"></div></li>
+              <li><p>PHP</p><div class="bar bar2"></div></li>
               <li><p>Java Script</p><div class="bar bar3"></div></li>
-              <li><p>Word Press</p><div class="bar bar4"></div></li>
+              <li><p>jQuery</p><div class="bar bar4"></div></li>
+              <li><p>Word Press</p><div class="bar bar5"></div></li>
             </ul>
           </div>
         </div>
 
+
+        <!-- 実績一覧 -->
         <div class="container">
           <h1><a name="works">WORKS</a></h1>
 
@@ -101,15 +110,16 @@
             </div>
 
             <div class="box2">
-              <a href="">
-                準備中です。
+              <a href="jQuery練習/index.html" target="_blank">
+                <img src="jQuery練習/スクリーンショット .png" alt="サムネイル" height="200">
               </a>
-              <p>ここに作品の概要を書きます。</p>
+              <p>かなりざっくりとjQueryの練習です。<br>
+               Progateの教材を見ながら作りました。</p>
             </div>
 
             <div class="box3">
               <a href="">
-                準備中です。
+                <img src="" alt="準備中です。" height="200">
               </a>
               <p>ここに作品の概要を書きます。</p>
             </div>
@@ -120,8 +130,9 @@
           </div>
         </div>
 
+        <!-- お問い合わせフォーム -->
+        <form action="" method="POST" novalidate >
 
-         <form action="s.mizuno426@outlook.com" method="post">
           <div class="Form">
             <h1><a name="contact">CONTACT</a></h1>
             <h3>お問い合わせ</h3>
@@ -134,7 +145,8 @@
             </div>
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
-              <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+              <input type="text" name="name" class="Form-Item-Input" placeholder="例）山田太郎">
+
             </div>
             <div class="Form-Item">
               <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
@@ -151,6 +163,7 @@
             <input type="submit" class="Form-Btn" value="送信する">
           </div>
         </form>
+
 
       </contents>
     </section>

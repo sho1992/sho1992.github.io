@@ -1,16 +1,18 @@
+
 body {
   font-family: "Avenir Next", "Hiragino Kaku Gothic ProN W3", sans-serif;
   background-color: rgb(130, 210, 255);
   margin: 0;
   color: white;
-  min-width: 540px;
+  /* min-width: 540px; */
+  width: 100%;
 }
 
 header {
   height: 60px;
   border-bottom: 3px solid rgb(80, 110, 255);
 }
-header h1, img {
+header h1, .header-image {
   float: left;
   margin-left: 10px;
 }
@@ -103,11 +105,27 @@ header li:hover{
   margin: 0;
 }
 
+@media screen and (max-width: 480px) {
+  .info h1:before, .info h1:after {
+    width: 80%;
+  }
+
+  .info h1:before{left:-110px;}
+
+  .info h1:after{right:-110px;}
+}
+
 .center-con {
     display: flex;
     height: 450px;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  .center-con {
+    height: 400px;
+  }
 }
 
 .round {
@@ -277,6 +295,9 @@ contents {
   max-width: 5%;
 }
 .bar4{
+  max-width: 20%;
+}
+.bar5{
   max-width: 0%;
 }
 
@@ -300,11 +321,13 @@ contents {
 .boxlist {
   display: flex;
   text-align: center;
-  line-height: 200px;
-  margin-left: 3.5vw;
-  margin-right: 6.5vw;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
+.box3 {
+  line-height: 200px;
+}
 
 @media screen and (max-width: 480px){
   .boxlist {
@@ -315,7 +338,6 @@ contents {
 
 .box1 a{
   height: 200px;
-  padding-right: 10px;
   background: rgb(80, 180, 250);
   margin-right: 10px;
   display: inline-block;
@@ -323,14 +345,13 @@ contents {
 
 .box2 a{
   height: 200px;
-  width: 30vw;
   background: rgb(110, 150, 250);
   margin-right: 10px;
   display: inline-block;
 }
 .box3 a{
   height: 200px;
-  width: 30vw;
+  width: 357px;
   background: rgb(140, 240, 200);
   display: inline-block;
 }
@@ -507,6 +528,10 @@ contents {
   font-size: 18px;
 }
 @media screen and (max-width: 480px) {
+  .Form-Item {
+    justify-content: space-around;
+  }
+
   .Form-Item-Textarea {
     margin-top: 18px;
     margin-left: 0;
