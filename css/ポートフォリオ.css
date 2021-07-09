@@ -235,6 +235,7 @@ contents {
 
 .myidea li {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .myidea li::after {
@@ -333,6 +334,11 @@ contents {
   .boxlist {
     display: contents;
   }
+
+  .box {
+    width: 330px;
+    margin: auto;
+  }
 }
 
 
@@ -343,15 +349,25 @@ contents {
   display: inline-block;
 }
 
-.box2 a{
+.box2-a{
   height: 200px;
   background: rgb(110, 150, 250);
   margin-right: 10px;
   display: inline-block;
 }
-.box3 a{
+
+.isara {
+  height: 0;
+  color: red;
+}
+
+.isara:hover {
+  color: #fff;
+}
+
+.box3-a{
   height: 200px;
-  width: 357px;
+  width: 330px;
   background: rgb(140, 240, 200);
   display: inline-block;
 }
@@ -363,7 +379,7 @@ contents {
 
  .box2 p {
    line-height: 30px;
-   height: 100px;
+   height: 130px;
    margin: 0;
  }
 
