@@ -35,22 +35,78 @@
 /* タブレット小 */
 @media screen and (max-width: 770px) {
 
+  .top-wrapper {
+    flex-direction: column;
+    padding-top: 140px;
+  }
+
+  .top-content {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .top-wrapper img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .top-content .readmore {
+    margin-bottom: 30px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
 /* 右側のカラム */
   aside {
-    width: 50%;
+    width: 100%;
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .ranking-item {
+    padding-left: 0;
+  }
+
+  .ranking-item img {
+    max-width: 100%;
+    width: 100%;
   }
 
 /* フッター */
+
+  footer {
+    margin-top: 85px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+
   .footer-left {
-    width: 35%;
+    width: 100%;
   }
 
   .footer-center {
-    width: 35%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 23px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    width: 97%;
   }
 
   .footer-right {
-    width: 35%;
+    width: 100%;
+    padding-left: 5px;
+  }
+
+  .twitter-timeline {
+    width: 380px;
   }
 }
 
@@ -128,6 +184,8 @@
   .archive li {
     padding: 20px;
   }
+
+/* フッター */
 
   footer {
     margin-top: 85px;
