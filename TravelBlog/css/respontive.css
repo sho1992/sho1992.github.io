@@ -1,0 +1,164 @@
+/* タブレット大 */
+@media screen and (max-width: 1025px) {
+
+/* 右側のカラム */
+  aside {
+    padding-left: 20px;
+    max-width: 320px;
+  }
+
+
+/* フッター */
+  footer {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .footer-container {
+    justify-content: space-around;
+    padding-bottom: 40px;
+  }
+
+  .footer-left {
+    width: 30%;
+  }
+
+  .footer-center {
+    width: 30%;
+  }
+
+  .footer-right {
+    width: 30%;
+  }
+}
+
+/* タブレット小 */
+@media screen and (max-width: 770px) {
+
+/* 右側のカラム */
+  aside {
+    width: 50%;
+  }
+
+/* フッター */
+  .footer-left {
+    width: 35%;
+  }
+
+  .footer-center {
+    width: 35%;
+  }
+
+  .footer-right {
+    width: 35%;
+  }
+}
+
+
+/* スマホ */
+@media screen and (max-width: 420px) {
+
+/* サイトトップ */
+  .top-wrapper {
+    flex-direction: column;
+    padding-top: 140px;
+  }
+
+  .top-content {
+    margin-left: 0;
+  }
+
+  .top-content .readmore {
+    margin-bottom: 30px;
+  }
+
+/* 大枠 */
+  .container {
+    flex-direction: column;
+  }
+
+/* 左側のカラム */
+  .main-text {
+    padding-right: 40px;
+  }
+
+/* 右側のカラム */
+  aside {
+    width: 100%;
+    padding-left: 0;
+    max-width: 100%;
+  }
+
+  .profile-image {
+    padding-top: 45px;
+  }
+
+  .profile-image h1 {
+    padding-right: 0;
+  }
+
+  .profaile p {
+    max-width: 100%;
+  }
+
+  .ranking-head {
+    padding-left: 10px;
+  }
+
+  .ranking-item {
+    padding-left: 0;
+  }
+
+  .ranking-item img {
+    max-width: 100%;
+  }
+
+  .ranking-item p {
+    width: 100%;
+  }
+
+  .archive {
+    width: 100%;
+  }
+
+  .archive-head h1 {
+    padding-right: 0;
+  }
+
+  .archive li {
+    padding: 20px;
+  }
+
+  footer {
+    margin-top: 85px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    padding-bottom: 80px;
+  }
+
+  .footer-left {
+    width: 100%;
+  }
+
+  .footer-center {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 23px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+    width: 97%;
+  }
+
+  .footer-right {
+    width: 100%;
+    padding-left: 5px;
+  }
+
+  .twitter-timeline {
+    width: 380px;
+  }
+}

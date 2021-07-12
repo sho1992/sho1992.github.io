@@ -324,6 +324,7 @@ contents {
   text-align: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .box3 {
@@ -349,6 +350,10 @@ contents {
   display: inline-block;
 }
 
+.box2 {
+  padding-bottom: 30px;
+}
+
 .box2-a{
   height: 200px;
   background: rgb(110, 150, 250);
@@ -363,6 +368,11 @@ contents {
 
 .isara:hover {
   color: #fff;
+}
+
+.box3 {
+  line-height: 0;
+  padding-bottom: 30px;
 }
 
 .box3-a{
@@ -385,7 +395,6 @@ contents {
 
  .box3 p {
    line-height: 30px;
-   height: 100px;
    margin: 0;
  }
 
