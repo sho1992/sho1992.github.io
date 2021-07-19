@@ -1,0 +1,326 @@
+
+/* タブレット */
+
+@media screen and (max-width: 900px) {
+/* モーダルウインドウボタン */
+
+  .modal-open {
+    height: 75px;
+    width: 75px;
+  }
+
+  .modal-open span {
+    left: 21px;
+    width: 35px;
+  }
+
+  .modal-open span:nth-child(1) {
+    top: 26px;
+  }
+
+  .modal-open span:nth-child(2) {
+    top: 37px;
+  }
+
+  .modal-open span:nth-child(3) {
+    top: 48px;
+  }
+
+  .modal-open.active span:nth-child(1) {
+    top: 37px;
+    left: 21px;
+  }
+
+  .modal-open.active span:nth-child(2),
+  .modal-open.active span:nth-child(3) {
+    top: 37px;
+  }
+
+/* サイトトップ */
+  .top-slide {
+    width: 100%;
+    height: 305px;
+    background-size: 100% 305px;
+  }
+
+  .top-main {
+    margin-left: 2%;
+    padding-top: 310px;
+    width: 98%;
+  }
+
+  .top-main h1 {
+    font-size: 28px;
+  }
+
+  .top-main-h1 {
+    margin-bottom: 10px;
+  }
+
+
+/* 無料体験ボタン */
+  .top-btn {
+    width: 98.5%;
+    position: relative;
+    justify-content: center;
+  }
+
+  .top-btn::after {
+    position: absolute;
+    right: 0;
+  }
+
+/* 繋ぎ */
+  .bbb {
+    margin-top: 90px;
+    margin-bottom: 40px;
+  }
+
+  .bbb h1 {
+    font-size: 27px;
+    letter-spacing: 2px;
+  }
+
+  .bbb-border {
+    width: 80px;
+  }
+
+/* スライド部分 */
+  .slide {
+    padding-top: 40px;
+    height: 382px;
+  }
+
+  .slide-left {
+    width: 98%;
+    padding: 5% 0;
+  }
+
+  .slide-text h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .slide-text p {
+    letter-spacing: 2px;
+  }
+
+  .slide-right {
+    width: 98%;
+    padding: 5% 0;
+  }
+
+/* フワッと出てくる */
+  .voice {
+    padding-top: 60px;
+  }
+
+  .voice h1 {
+    font-size: 28px;
+  }
+
+  .voice-border {
+    margin-bottom: 40px;
+  }
+
+  .voice_content {
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .voice_content-right {
+    flex-direction: column-reverse;
+  }
+
+  .voice_content-left {
+    flex-direction: column;
+  }
+
+  .voice_text {
+    margin-left: 0;
+    width: 92%;
+    text-align: center;
+  }
+
+  .voice_left::before {
+    display: none;
+  }
+
+  .voice_left::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 48%;
+    border: 15px solid transparent;
+    border-top: 15px solid rgb(232, 241, 251);
+  }
+
+  .voice__image img {
+    margin-top: 28px;
+  }
+
+  .voice_right {
+    margin-right: 0;
+  }
+
+  .voice_right::after {
+    display: none;
+  }
+
+  .voice_right::before {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 48%;
+    border: 15px solid transparent;
+    border-top: 15px solid rgb(232, 241, 251);
+  }
+
+/* 背景画像アニメーション */
+  .animetion {
+    margin-top: 80px;
+    padding-top: 45px;
+  }
+
+  .animetion-head {
+    font-size: 27px;
+  }
+
+  .animetion-border {
+    margin-bottom: 25px;
+  }
+
+  .animetion_wrapper {
+    flex-direction: column;
+  }
+
+  .animetion_content {
+    width: 93.5%;
+    margin-left: 30px;
+  }
+
+  .animetion_content h1 {
+    font-size: 23px;
+    margin-top: 25px;
+  }
+
+  .animetion_content h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .animetion_content p {
+    width: 93%;
+    padding-bottom: 30px;
+  }
+
+/* 申し込み */
+  .contact {
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .contact h1 {
+    font-size: 24px;
+  }
+
+  .contact p {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .contact a {
+    font-size: 24px;
+    padding: 16px;
+    width: 90%;
+    display: inline-block;
+  }
+
+/* フッター */
+  footer h3 {
+    font-size: 15px;
+  }
+
+  .footer_flex {
+    flex-wrap: wrap;
+  }
+
+  .footer_item1 {
+    width: 47%;
+    margin: 0;
+  }
+
+  .footer_item2 {
+    width: 47%;
+    margin: 0;
+  }
+
+  .footer_item3 {
+    width: 47%;
+    margin: 0;
+  }
+
+  .footer_item4 {
+    width: 47%;
+    margin: 0;
+  }
+}
+
+
+@media screen and (max-width: 710px) {
+  .voice_text {
+    text-align: left;
+  }
+}
+
+
+/* 大きめのスマホ */
+@media screen and (max-width: 540px) {
+
+/* ヘッダー */
+  .header-logo {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+
+/* モーダル */
+  .modal-logo {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .modal-menu {
+    top: 90px;
+  }
+
+
+/* サイトトップ */
+  .top-page {
+    height: 480px;
+  }
+
+/* スライド部分 */
+  .slide {
+    height: 310px;
+  }
+
+/* フワッと出てくる */
+  .voice {
+    padding: 0 15px;
+  }
+
+/* アニメーション */
+  .animetion_content {
+    margin: 16px auto;
+  }
+
+/* フッター */
+  footer {
+    margin-top: 80px;
+  }
+
+  footer a {
+    font-size: 12px;
+  }
+}
