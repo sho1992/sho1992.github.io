@@ -3,49 +3,183 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/master.css">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="../android-touch-icon.png" sizes="192x192">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Other works</title>
+    <title>SHOのポートフォリオサイト</title>
+    <link rel="stylesheet" href="css/ポートフォリオ.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="android-touch-icon.png" sizes="192x192">
+
   </head>
-
   <body>
-<!-- アニメーション -->
-    <canvas id="canvas"></canvas>
-    <div id="buffer" style="display:none;"></div>
+    <header>
+      <img class="header-image" src="https://raw.githubusercontent.com/sho1992/sho1992.github.io/main/css/img/favicon%E3%81%AE%E3%82%B3%E3%83%92%E3%82%9A%E3%83%BC.ico"height="54" alt="">
+      <h1>SHO</h1>
 
-<!-- ページ -->
-      <section class="sect02">
-        <div class="link1">
+      <ul class="menu">
 
-          <a class="link2" href="English School/index.html" target="_blank">
-            <figure class="scrollanime downup">
-              <img class="pcimage" src="img/スクリーンショット.png" alt="">
-            </figure>
-          </a>
+        <li><a href="#profile">PROFILE</a></li>
+        <li><a href="#myidea">MY IDEA</a></li>
+        <li><a href="#skill">SKILL</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#contact" >CONTACT</a></li>
 
-          <p>英会話教室サイトの模写です</p>
-          <p>HTML.CSS.jQueryを使用しています。</p>
-          <p>画像は違いますが元サイトは<a class="jump"  href="https://code-step.com/demo/html/lp/">こちら</a></p>
+      </ul>
+
+    </header>
+
+    <!-- トップページ -->
+    <section>
+      <div class="info">
+
+      <h1>SHO's</h1>
+      <h2>PORTFOLIO</h2>
+      <p>「理想を形に、想いを力に。」</p>
+      <p>HTMLとCSSならお任せください。</p>
+
+      <div class="center-con">
+        <div class="round">
+            <span class="con"></span>
+            <span class="con"></span>
+            <span class="con"></span>
+            <span class="con"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <section>
+      <contents>
+
+        <!-- 自己紹介 -->
+        <div class="profile">
+
+          <h1><a name="profile">PROFILE</a></h1>
+          <h2>NAME</h2>
+          <p>SHO</p>
+          <h2>BIRTH YEAR</h2>
+          <p>1992</p>
+          <h2>CAREER</h2>
+          <p>2010年: 高校卒業</p>
+          <p>2010~2014年: 鉄鋼業会社勤務</p>
+          <p>2014~2021年: 産業廃棄物焼却会社勤務</p>
+          <p>現在~:退職後プログラミングを独学し勉強中</p>
+        </div>
+
+        <!-- 理念 -->
+        <div class="myidea">
+
+          <h1><a name="myidea">MY IDEA</a></h1>
+          <div class="myidea-list">
+
+            <ul>
+              <li>この人に頼みたいと思われるような作品</li>
+              <li>他の作品も見てみたいと思われる魅力</li>
+              <li>スムーズに仕事が進む対応力</li>
+            </ul>
+          </div>
+          <p>これらを理念として活動しています。</p>
+        </div>
+
+        <div class="skill-list">
+
+          <!-- スキル概要 -->
+          <h1><a name="skill">SKILL</a></h1>
+          <div class="graph">
+            <ul>
+              <li><p>HTML/CSS</p><div class="bar bar1"></div></li>
+              <li><p>PHP</p><div class="bar bar2"></div></li>
+              <li><p>Java Script</p><div class="bar bar3"></div></li>
+              <li><p>jQuery</p><div class="bar bar4"></div></li>
+              <li><p>Word Press</p><div class="bar bar5"></div></li>
+            </ul>
+          </div>
         </div>
 
 
-        <div class="link1">
-          <a class="link2" href="shoping/index.html" target="_blank">
-            <figure class="scrollanime2 downup">
-              <img class="pcimage" src="img/スクリーンショット shoping.png" alt="">
-            </figure>
-          </a>
+        <!-- 実績一覧 -->
+        <div class="container">
+          <h1><a name="works">WORKS</a></h1>
 
-            <p>ショッピングサイトの模写です</p>
-            <p>HTML.CSS.jQueryを使用しています。</p>
-            <p>画像は違いますが元サイトは<a class="jump" href="https://code-step.com/demo/html/store2/">こちら</a></p>
-          </a>
+          <div class="boxlist">
+            <div class="box box1">
+              <a href="Cosmetics-site/index.html" target="_blank">
+                <img src="Cosmetics-site/img/PAK86_dryfftookesyou_TP_V4.jpg" alt="サムネイル" height="200">
+              </a>
+              <p>化粧品会社のサイトを見ながら作りました。<br>
+                半分以上は模写ですが、<br>画像はフリー素材を使用しています。</p>
+            </div>
+
+            <div class="box box2">
+              <a class="box2-a isara-pc" href="css/img/iSara-img/Screenshot pc iSara[イサラ] バンコクのノマドエンジニア育成講座.png" target="_blank">
+                <img class="isara-pc" src="css/img/iSara-img/Screenshot iSara[イサラ] バンコクのノマドエンジニア育成講座.png" alt="サムネイル" height="200" width="330">
+              </a>
+              <p>iSara.life模写制作LP<br>
+               iSara.lifeのLP模写です。<br>
+               元のサイトは<a class="isara" href="https://isara.life/" target="_blank">isara.life</a>から。<br>
+               公開条件によりキャプチャ画像となります。<br>
+               レスポンシブの模写は<a class="isara" href="css/img/iSara-img/Screenshot respontive iSara[イサラ] バンコクのノマドエンジニア育成講座.png">こちら</a></p>
+            </div>
+
+            <div class="box box3">
+              <a href="TravelBlog/index.html" target="_blank">
+                <img class="box3-a" src="TravelBlog/img/スクリーンショット .png" alt="サムネイル" height="200">
+              </a>
+              <p>Codestepさんに掲載の模写です。<br>
+              画像はフリー素材を使用しています。<br>
+              元のサイトは<a class="isara" href="https://code-step.com/demo/html/blog/">こちら</a>です。</p>
+            </div>
+          </div>
+
+          <div class="works">
+            <h1><a href="Other works/index.html">Other works</a></h1>
+          </div>
         </div>
 
-      </section>
-<script src="js/script.js"></script>
+        <!-- お問い合わせフォーム -->
+        <form action="" method="POST" novalidate >
+
+          <div class="Form">
+            <h1><a name="contact">CONTACT</a></h1>
+            <h3>お問い合わせ</h3>
+
+            <div class="Form-Item">
+              <p class="Form-Item-Label">
+                <span class="Form-Item-Label-Required">必須</span>会社名
+              </p>
+              <input type="text" class="Form-Item-Input" placeholder="例）株式会社令和">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
+              <input type="text" name="name" class="Form-Item-Input" placeholder="例）山田太郎">
+
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>電話番号</p>
+              <input type="text" class="Form-Item-Input" placeholder="例）000-0000-0000">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
+              <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+            </div>
+            <div class="Form-Item">
+              <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
+              <textarea class="Form-Item-Textarea"></textarea>
+            </div>
+            <input type="submit" class="Form-Btn" value="送信する">
+          </div>
+        </form>
+
+
+      </contents>
+    </section>
+
+    <div class="top">
+      <a href="#" class="btn-box">ページトップへ戻る</a>
+    </div>
+
+    <footer>
+      <h1>2021/SHO'sPORTFOLIO</h1>
+
+    </footer>
   </body>
 </html>
