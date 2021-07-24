@@ -1,0 +1,382 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 5;
+}
+
+.head {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.head-left {
+  padding-top: 22px;
+  display: inline-block;
+}
+
+.head-logo {
+  font-size: 20px;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.head-logo:hover {
+  opacity: .6;
+}
+
+/* モーダルボタン */
+.modal-open,
+.modal-open span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+}
+
+.modal-open {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  appearance: none;
+  margin-top: 25px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.modal-open span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.modal-open span:nth-of-type(1) {
+  top: 10px;
+}
+
+.modal-open span:nth-of-type(2) {
+  bottom: 10px;
+}
+
+.modal-open.active span:nth-of-type(1) {
+  transform: translateY(4px) rotate(-45deg);
+  background-color: #fff;
+}
+
+.modal-open.active span:nth-of-type(2) {
+  transform: translateY(-4px) rotate(45deg);
+  background-color: #fff;
+}
+
+/* オーバーレイ */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* モーダルメニュー */
+.modal-menu {
+  position: fixed;
+  top: -30px;
+  left: 10px;
+  width: 300px;
+  height: 300px;
+  z-index: 11;
+  display: none;
+  line-height: 2.2;
+  animation: slide-in-anim 1s ease-out;
+}
+
+@keyframes slide-in-anim {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+
+  60% {
+    transform: translateX(-5%);
+  }
+
+  75% {
+    transform: translateX(-1%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.modal-menu ul {
+  width: 100%;
+  height: 100%;
+  padding-left: 0;
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.modal-menu li {
+  list-style: none;
+}
+
+.modal-menu a {
+  color: #fff;
+  font-size: 14px;
+  transition: all 1s;
+}
+
+.modal-menu a:hover {
+  opacity: .6;
+}
+/* モーダル終わり */
+
+
+a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.image-smol {
+  height: 100%;
+}
+
+/* コンテンツ */
+.content-wrapper {
+  padding: 0 40px;
+  width: 89.8%;
+  margin: auto;
+  padding-top: 105px;
+  margin-bottom: 63px;
+}
+
+.content-wrapper p {
+  font-size: 14px;
+}
+
+.content-text {
+  width: 340px;
+  height: 100px;
+}
+
+.content p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+table {
+  width: 605px;
+  height: 400px;
+  margin-top: 32px;
+  overflow: hidden;
+}
+
+tr,td {
+  padding: 20px 110px 23px 10px;
+}
+
+tr {
+  border-bottom: 1px solid rgb(220, 219, 219);
+}
+
+.td {
+  display: inline-block;
+}
+
+td {
+  font-size: 14px;
+  line-height: 1.25;
+}
+
+iframe {
+  margin-left: 73px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* フッター */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 89.5%;
+  margin: auto;
+  margin-top: 112px;
+  margin-bottom: 13px;
+}
+
+.footer-left a {
+  font-size: 12px;
+  margin-right: 25px;
+  transition: .5s;
+}
+
+.footer-left a:hover {
+  opacity: .6;
+}
+
+.footer-right p {
+  font-size: 10px;
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width: 900px) {
+  .head {
+    width: 91%;
+  }
+  .content-wrapper {
+    padding: 0;
+    padding-top: 105px;
+    width: 91%;
+    margin-bottom: 0;
+    margin-left: 40px;
+    overflow: hidden;
+  }
+
+  table {
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-top: 31px;
+  }
+
+  tbody {
+    overflow: hidden;
+  }
+
+  .td1 {
+    padding-top: 22px;
+  }
+
+  .td2 {
+    padding: 12px 0 20px 10px;
+    line-height: 21px;
+  }
+
+  tr {
+    padding: 0;
+    overflow: hidden;
+  }
+
+  td {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-left: 10px;
+  }
+
+  iframe {
+    margin-left: 40px;
+    height: 300px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+    width: 90.5%;
+  }
+
+  .footer-right p {
+    margin-top: 4px;
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  iframe {
+    width: 86vw;
+  }
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 540px) {
+  .head {
+    width: 86%;
+  }
+
+  .content-wrapper {
+    width: 86%;
+  }
+
+  .td {
+    width: 44%;
+  }
+
+  footer {
+    width: 84.5%;
+  }
+
+  iframe {
+    width: 82vw;
+  }
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width: 411px) {
+  .head {
+    width: 82%;
+  }
+
+  .content-wrapper {
+    width: 82%;
+  }
+
+  .td {
+    width: 36%;
+  }
+
+  iframe {
+    width: 80vw;
+  }
+
+  footer {
+    width: 81.5%;
+  }
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 375px) {
+  .head {
+    width: 78%;
+  }
+
+  .content-wrapper {
+    width: 78%;
+  }
+
+  .td {
+    width: 33%;
+    padding-right: 0;
+  }
+
+  iframe {
+    width: 79vw;
+  }
+
+  footer {
+    width: 78.5%;
+  }
+}

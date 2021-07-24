@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="company.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/vnd.microsoft.icon">
+    <title>Furniture Design</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+
+<!-- ヘッダー -->
+    <header>
+      <div class="head">
+
+      <div class="head-left">
+        <a class="head-logo" href="../index.html">Furniture Design</a>
+      </div>
+
+<!-- モーダルオープン -->
+      <div class="modal-open">
+          <span class="modal-btn"></span>
+          <span class="modal-btn"></span>
+      </div>
+</div>
+<!-- オーバーレイ -->
+      <div id="overlay" class="overlay"></div>
+
+<!-- モーダルメニュー -->
+      <div class="modal-menu">
+        <ul>
+          <li><a href="../ViewMore/index.html">PRODUCTS</a></li>
+          <li><a href="../about/index.html">ABOUT</a></li>
+          <li><a href="company.html">COMPANY</a></li>
+          <li><a href="mailto:xxxxx@xxx.xxx.com?subject=お問い合わせ">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section>
+<!-- コンテンツ -->
+
+    <div class="content-wrapper">
+      <p class="head-text">Company</p>
+      <table rules="groups">
+        <tr>
+          <td class="td1">社名</td>
+          <td class="td2">株式会社ファニチャーデザイン</td>
+        </tr>
+
+        <tr>
+          <td class="td1">住所</td>
+          <td class="td2">〒107-0062 東京都港区南青山１丁目××××××</td>
+        </tr>
+
+        <tr>
+          <td class="td1">設立</td>
+          <td class="td2">XXXX年XX月</td>
+        </tr>
+
+        <tr>
+          <td class="td1">資本金</td>
+          <td class="td2">XXXX万円</td>
+        </tr>
+
+        <tr>
+          <td class="td1">従業員数</td>
+          <td class="td2">XX名</td>
+        </tr>
+
+        <tr>
+          <td class="td td1">事業内容</td>
+          <td class="td2">家具、インテリアの企画・生産<br>
+              家具、インテリアの販売<br>
+              店舗の企画・デザイン・設計
+          </td>
+        </tr>
+      </table>
+
+    </div>
+
+    </section>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6482.583235229463!2d139.72122724667923!3d35.66982087039875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1626954766572!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+<!-- フッター -->
+    <footer>
+
+      <div class="footer-left">
+        <a href="https://www.instagram.com/" target="_blank">INSTAGRAM</a>
+        <a href="https://twitter.com/" target="_blank">TWITTER</a>
+        <a href="https://www.facebook.com/" target="_blank">FACEBOOK</a>
+      </div>
+
+      <div class="footer-right">
+        <p><span>©</span> Furniture Design</p>
+      </div>
+    </footer>
+
+    <script src="../js/script.js">
+
+    </script>
+
+    <!-- ホバー関連 -->
+        <script type="text/javascript">
+        $('.content').hover(
+          function() {
+            $('img',this).css('opacity','0.8');
+          },
+
+          function() {
+            $('.content img').css('opacity','1');
+          }
+        );
+        </script>
+  </body>
+</html>
