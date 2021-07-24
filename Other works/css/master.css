@@ -8,13 +8,16 @@ body {
 
 .sect02 {
   height: 500px;
-  margin-top: 110px;
-  text-align: center;
+  margin-top: 200px;
+  display: flex;
+  margin-bottom: 300px;
 }
 
-a {
+.link1 {
   display: inline-block;
   width: 50%;
+  text-align: center;
+  text-decoration: none;
 }
 
 .scrollanime {
@@ -29,7 +32,7 @@ a {
   transition: all.8s;
 }
 
-.scrollanime::after {
+.downup::after {
   position: absolute;
   top: 0;
   right: 0;
@@ -43,7 +46,22 @@ a {
 
 .scrollanime:hover {
   cursor: pointer;
-  transform: rotate(45deg);
+}
+
+.scrollanime2 {
+  display: inline-block;
+  position: relative;
+  opacity: 0;
+  transform: translateY(200px);
+  -webkit-transition: all .8s;
+  -moz-transition: all .8s;
+  -o-transition: all .8s;
+  -ms-transition: all .8s;
+  transition: all.8s;
+}
+
+.scrollanime:hover {
+  cursor: pointer;
 }
 
 .fade_on {
@@ -51,6 +69,33 @@ a {
   transform: translateY(0);
 }
 
-img {
+.pcimage {
   width: 100%;
+}
+
+.link1 p {
+  color: #fff;
+  opacity: .7;
+}
+
+.jump {
+  color: rgb(0, 255, 18);
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.jump:hover {
+  color: rgb(157, 255, 187);
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 600px) {
+  .sect02 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link1 {
+    width: 80%;
+  }
 }

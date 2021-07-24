@@ -499,16 +499,17 @@ vertex3d.prototype = {
     };
   };
   var textSet = [
-    {text:"WELCOME!!", sphereRadius:140, sphereSpace:80, unitTime:100, time:1000},
+    {text:"WELCOME!!", sphereRadius:140, sphereSpace:60, unitTime:100, time:1000},
     {text:"TO_MY", sphereRadius:120, sphereSpace:70, unitTime:120, time:4000},
-    {text:"WORKPLACE!", sphereRadius:120, sphereSpace:70, unitTime:50, time:2000},
+    {text:"WORKPLACE!", sphereRadius:120, sphereSpace:60, unitTime:50, time:2000},
     {text:"MY_WORK", sphereRadius:120, sphereSpace:70, unitTime:100, time:4000},
     {text:"IN_YOUR_EYES", sphereRadius:100, sphereSpace:60, unitTime:100, time:3000},
-    {text:"BURN!!!!!", sphereRadius:140, sphereSpace:80, unitTime:100, time:2000},
-    {text:"NOVICE???", sphereRadius:60 + Math.random()*60, sphereSpace:200, unitTime:100, time:4000},
+    {text:"BURN!!!!!", sphereRadius:140, sphereSpace:70, unitTime:100, time:2000},
+    {text:"NOVICE???", sphereRadius:60 + Math.random()*60, sphereSpace:70, unitTime:100, time:4000},
     {text:"FOOL???", sphereRadius:120, sphereSpace:70, unitTime:100, time:2000},
     {text:"SUPERIO!!", sphereRadius:100, sphereSpace:60, unitTime:150, time:3500},
-    {text:"I_AM_A_DREAMER", sphereRadius:120, sphereSpace:70, unitTime:50, time:2000},
+    {text:"I_AM_A", sphereRadius:120, sphereSpace:60, unitTime:50, time:2000},
+    {text:"DREAMER", sphereRadius:120, sphereSpace:50, unitTime:50, time:2000},
     {text:"IF_YOU_WANT", sphereRadius:100, sphereSpace:60, unitTime:100, time:3500},
     {text:"TO_BET", sphereRadius:140, sphereSpace:80, unitTime:100, time:2500},
     {text:"BET_ON_ME!!", sphereRadius:60 + Math.random()*60, sphereSpace:200, unitTime:100, time:4000}
@@ -565,9 +566,26 @@ vertex3d.prototype = {
 };
 
 
+// イメージフェードイン
 $(function() {
   $(window).scroll(function() {
     $('.scrollanime').each(function() {
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+
+      if (scroll > imgPos - windowHeight + windowHeight/8) {
+        $(this).addClass('fade_on');
+      } else {
+        $(this).removeClass('fade_on');
+      }
+    });
+  });
+});
+
+$(function() {
+  $(window).scroll(function() {
+    $('.scrollanime2').each(function() {
       var imgPos = $(this).offset().top;
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
